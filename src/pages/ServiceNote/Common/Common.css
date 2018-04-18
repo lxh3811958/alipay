@@ -1,0 +1,343 @@
+/*
+* @Author: lixh
+* @Date:   2017-05-06 13:35:10
+* @Last Modified by:   lixh
+* @Last Modified time: 2018-03-26 15:27:07
+*/
+.detailsLayer{
+  z-index: 100;
+  background-color: rgba(0,0,0,0.722);
+  width: 100%;
+  display: none;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+}
+.detailsLayerContent{
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background-color: white;
+  overflow: scroll;
+  border-radius: .72rem;
+  box-shadow: 0px 0px 62px 0px rgba(147, 121, 230, 0.32);
+}
+.detailsLayer .line{
+  background-color: black;
+  width: 80%;
+  margin: 10px 10%;
+}
+.detailsLayer .head{
+  font-size: .52rem;
+  margin: 1rem auto .7rem;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.detailsLayerPTitle{
+  width: 80%;
+  margin: .4rem 10%;
+  font-size: .42rem;
+  line-height: .72rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+.detailsLayerPContent{
+  width: 80%;
+  margin: auto 10%;
+  font-size: .36rem;
+  line-height: .56rem;
+  text-align: left;
+  color: black;
+}
+.detailsLayer .content{
+  margin-bottom: 2.5rem;
+}
+.detailsLayer .button{
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  background-color: white;
+  height: 2rem;
+}
+.detailsLayer .button p{
+  font-size: .52rem;
+  line-height: 1rem;
+  height: 1rem;
+  color: white;
+  background-color: #bf7bf7;
+  width: 34%;
+  position: fixed;
+  right: 33%;
+  bottom: 13%;
+  left: 33%;
+  border-radius: .5rem;
+  box-shadow: 0px 16px 22px 0px rgba(191, 123, 247, 0.72);
+}
+.detailsLayer .red{
+  color: #e41616;
+}
+.firstTitle{
+  margin-bottom: .3rem;
+}
+.secondTitle{
+  font-size: .62rem;
+  margin-bottom: .3rem;
+  font-weight: normal;
+  margin-top: auto;
+}
+.thirdTitle{
+  font-size: .42rem;
+  font-weight: normal;
+  margin-bottom: 1.2rem;
+  line-height: .62rem;
+  float: left;
+}
+.invoiceIcon{
+  float: left;
+  width: 2.15rem;
+  margin: .1rem auto 1.3rem 2%;
+}
+.thirdTitle .red{
+  color: #fd4b7d;
+}
+.type{
+  width: 100%;
+  float: left;
+}
+.type P{
+  float: left;
+  color: #949494;
+  font-size: .42rem;
+  width: 25%;
+  line-height: .62rem;
+}
+.type .leftP{
+  text-align: left;
+  width: 18%;
+  font-weight: bold;
+  color: black;
+}
+.type .normalP{
+  width: 32%;
+}
+.type .rightP{
+  text-align: right;
+  width: 18%;
+}
+.triangelIcon{
+  height: .26rem;
+    float: left;
+    width: 100%;
+}
+.triangelIcon img{
+  position: absolute;
+  top: .06rem;
+  left: 3%;
+  width: .2rem;
+}
+.skipVip{
+  width: 11.02rem;
+  height: 1.68rem;
+}
+.box{
+  display: none;
+  margin-top: .5rem;
+}
+.feature{
+  display: block;
+}
+/*.standard{
+  display: block;
+}*/
+.featureItem{
+  margin-top: .5rem;
+  /*width: 100%;*/
+}
+.featureItem .left{
+  width: .87rem;
+  height: 1.87rem;
+  margin: auto .45rem 1rem auto;
+  float: left;
+}
+.featureItem .right{
+  float: left;
+  width: 88%;
+  color: black;
+  text-align: left;
+  padding-bottom: .5rem;
+  /*border-bottom: 1px solid #c2c2c2;*/
+}
+.rightLine{
+  width: 88%;
+  margin-left: 12%;
+  border-bottom: 1px solid #c2c2c2;
+  float: left;
+}
+.featureItem .right .head{
+  font-size: .42rem;
+  margin-bottom: .2rem;
+  line-height: .62rem;
+  font-weight: bold;
+}
+.featureItem .right .footer{
+  font-size: .36rem;
+  line-height: .56rem;
+}
+.title{
+  text-align: left;
+  font-size: .42rem;
+  margin: .5rem auto;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  float: left;
+}
+.tips{
+  font-size: .42rem;
+  text-align: left;
+  margin-top: .3rem;
+  color: #e41616;
+}
+table{
+  width: 100%;
+}
+table,tr,td{
+  border: 1px solid #dadada;
+  font-size: .42rem;
+  color: black;
+  line-height: .62rem;
+}
+tr{
+  height: 1rem;
+}
+.tdTwo{
+  width: 49%;
+}
+.tdThree{
+  width: 33%;
+}
+.tdFour{
+  width: 25%;
+}
+.tdFive{
+  width: 20%;
+}
+.skipLong{
+  color: #fd5a87;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: .42rem;
+  line-height: .62rem;
+  margin: .5rem auto .1rem;
+}
+.noticeMsg p{
+  font-size: .42rem;
+  color: black;
+  text-align: left;
+  line-height: .72rem;
+  margin-bottom: .1rem;
+}
+.noticeMsg .red{
+  color: #e41616;
+}
+.equipBgImg{
+  width: 11rem;
+  height: 9.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.looseCyle{
+  width: 2.08rem;
+  height: 2.09rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 80%;
+}
+.equipList{
+  position: absolute;
+  top: 3.9rem;
+  right: 0;
+  bottom: .5rem;
+  left: 0;
+}
+.cookPage .equipList{
+  top: 4.9rem;
+}
+.equipItem{
+  float: left;
+  width: 33%;
+  margin-bottom: .4rem;
+}
+.equipItem img{
+  width: 3.6rem;
+  height: 2.3rem;
+}
+.equipItem p{
+  font-size: .4rem;
+  color: black;
+  line-height: .72rem;
+}
+.equip .left{
+  margin-left: -1.5%;
+  margin-right: 2%;
+}
+.equip .right{
+  margin-right: -3%;
+  margin-left: 2%;
+}
+.range{
+}
+.rangeDiv{
+  width: 20%;
+  float: left;
+  margin-bottom: .4rem;
+}
+.homeDayDiv img{
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.homeBigDiv img{
+  width: 2rem;
+  margin: auto .1rem;
+  height: 2rem;
+}
+.homeDayDiv{
+  margin-right: 6.6%;
+}
+.homeGlassDiv{
+  margin-right: 20%;
+}
+.rangeDiv p{
+  font-size: .42rem;
+  line-height: .62rem;
+  color: black;
+  margin-top: .15rem;
+}
+.radiusImg{
+  border-radius: .18rem;
+  margin-bottom: .3rem;
+}
+.standard .title{
+  float: left;
+  width: 100%;
+  margin-top: .2rem;
+}
+.priceUp{
+  display: none;
+}
+.clearPriceTop{
+  margin-top: .5rem;
+}
+.priceP{
+  text-align: right;
+  margin-bottom: .3rem;
+  font-size: .36rem;
+}

@@ -1,0 +1,57 @@
+.defaultDiv {
+    width: 88%;
+    margin: auto 6%;
+}
+
+p {
+    color: #64497c;
+}
+
+.pTitle {
+    font-size: .93rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.pContent {
+    font-size: .62rem;
+    color: #484848;
+    margin: .35rem auto 1.53rem;
+}
+
+.serviceItem {
+    margin-bottom: .7rem;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: .7rem;
+}
+
+.serviceItemImg {
+    width: 1.02rem;
+    float: left;
+    margin: .09rem auto;
+}
+
+.serviceItem p {
+    font-size: .45rem;
+    /*width: 89.4%;*/
+    float: left;
+    margin-left: .54rem;
+}
+
+.skipImg {
+    width: .17rem;
+    margin: .45rem auto;
+    float: right;
+}
+
+.serviceItemOne {
+    line-height: 1.2rem;
+}
+
+.serviceItemTwo {
+    line-height: .6rem;
+}
+
+.serviceItemTwo span {
+    font-size: .33rem;
+}

@@ -1,0 +1,158 @@
+/*
+* @Author: lixh
+* @Date:   2018-01-15 15:04:38
+ * @Last Modified by: lixh
+ * @Last Modified time: 2018-02-24 13:58:29
+*/
+input{
+  border: 1px solid #dadada;
+  widows: 76%;
+  margin: .3rem 10%;
+  padding: .1rem 2%;
+  height: 1rem;
+  line-break: 1rem;
+  font-size: .42rem;
+}
+.guideMapLayer{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,.62);
+  display: none;
+}
+.guideMap{
+  display: none;
+}
+.guideMap .guideMapAdd{
+  position: absolute;
+  width: 8.6rem;
+  top: .3rem;
+  right: 5%;
+}
+.guideMap .guideMapBtn{
+  position: absolute;
+  width: 3.7rem;
+  right: 35%;
+  bottom: 2.6rem;
+  left: 35%;
+}
+.guideMap .guideMapVip{
+  position: absolute;
+  width: 8.6rem;
+  top: 1rem;
+  left: 5%;
+}
+.guideMap .guideMapService{
+  position: absolute;
+  width: 11.94rem;
+  right: 1.3%;
+  bottom: 5.5rem;
+  left: 1.3%;
+}
+.guideMap2{
+  /*display: block;*/
+}
+.userIcon{
+  width: .1rem;
+  float: left;
+  display: none;
+}
+.location{
+  margin: .38rem auto .7rem;
+}
+.cityName{
+  width: 90%;
+  font-size: .42rem;
+  line-height: .76rem;
+}
+.locationIcon{
+  width: .76rem;
+}
+.appIcon{
+  font-size: .36rem;
+  color: #0d0d0d;
+}
+.appIcon div{
+  width: 25%;
+  float: left;
+  position: relative;
+}
+.appIcon p{
+  margin: .32rem auto .72rem;
+}
+.appIcon img{
+  width: 29%;
+  margin: auto 35.5%;
+}
+.newIcon,.hotIcon{
+  width: .82rem;
+  position: absolute;
+  top: -0.3rem;
+  left: 90%;
+}
+.appIcon .newIcon{
+  width: .82rem;
+  left: 33%;
+}
+.appIcon .leftDiv{
+  /*margin-right: 13.375%;*/
+}
+.bannerList{
+  width: 89%;
+  margin: .5rem 5.5%;
+}
+.serviceTitle{
+  font-size: .93rem;
+  line-height: 1rem;
+  font-weight: bold;
+  margin: .96rem auto .38rem;
+}
+.serviceContent{
+  font-size: .62rem;
+  line-height: .68rem;
+  color: #484848;
+  margin-bottom: 1.42rem;
+}
+.serviceItem{
+  width: 18.25%;
+  float: left;
+  font-size: .36rem;
+  position: relative;
+  /*line-height: .4rem;*/
+}
+.serviceItem p{
+  margin: .54rem auto .94rem;
+}
+.serviceItemRight{
+  margin-right: 9%;
+}
+.footer img{
+  width: 40%;
+  margin: 1rem 30%;
+}
+.am-carousel {
+  position: relative;
+}
+.am-carousel-wrap {
+  font-size: 18px;
+  color: #000;
+  background: none;
+  text-align: center;
+  zoom: 1;
+  width: 100%;
+}
+.am-carousel-wrap-dot {
+  display: inline-block;
+  zoom: 1;
+}
+/* .am-carousel-wrap-dot > span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background: #ccc;
+} */

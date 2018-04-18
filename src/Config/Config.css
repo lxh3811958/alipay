@@ -1,0 +1,692 @@
+/*
+* @Author: lixh
+* @Date:   2017-08-01 14:52:03
+* @Last Modified by:   lixh
+* @Last Modified time: 2018-01-15 14:40:29
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    text-align: center;
+}
+
+img
+{
+    display: block;
+
+    width: 100%;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+p
+{
+    letter-spacing: 1px;
+}
+
+input
+{
+    border: none;
+
+    -webkit-appearance: none;
+}
+input:focus
+{
+    outline: none;
+}
+ol,
+ul,
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: black;
+}
+
+a:focus
+{
+    outline: none;
+}
+
+.relative
+{
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+}
+
+.fixed
+{
+    position: fixed;
+}
+
+.clearFloat
+{
+    clear: both;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+.textMiddle
+{
+    vertical-align: middle;
+}
+
+.textTop
+{
+    vertical-align: top;
+}
+
+.textBottom
+{
+    vertical-align: bottom;
+}
+
+.textLeft
+{
+    text-align: left;
+}
+
+.textCenter
+{
+    text-align: center;
+}
+
+.textRight
+{
+    text-align: right;
+}
+
+.cursorPointer
+{
+    cursor: pointer;
+}
+
+.cursorDefault
+{
+    cursor: default;
+}
+
+.cursorAuto
+{
+    cursor: auto;
+}
+
+.visibilityHidden
+{
+    visibility: hidden;
+}
+
+.widthHundred
+{
+    width: 100%;
+}
+
+.bgColorWhite
+{
+    background-color: white;
+}
+.bgColorPurple
+{
+    background-color: #6539c0;
+}
+.red
+{
+    color: #e41616;
+}
+.pink
+{
+    color: #fd4b7d;
+}
+
+.grey
+{
+    color: #c1c1c1;
+}
+.clearfix:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '.';
+}
+.bottomLine
+{
+    border-bottom: 1px solid #dadada;
+}
+.onePXLineBottom::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200%;
+    height: 200%;
+
+    content: '';
+    -webkit-transform: scale(.5,.5);
+            transform: scale(.5,.5);
+    -webkit-transform-origin: top left;
+
+    border-bottom: 1px solid #888;/*此处颜色需要设置比原图颜色深，因为会虚化导致颜色变浅*/
+    border-radius: 1px;/*原为4像素，但在页面显示会有圆角，所以改成1像素*/
+}
+
+
+/****/
+
+.defaultDiv
+{
+    width: 89%;
+    margin-right: 5.5%;
+    margin-left: 5.5%;
+}
+
+.backFloor
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 5.5%;
+    left: 5.5%;
+
+    height: 1rem;
+    padding: .34rem 0 .4rem;
+
+    background-color: white;
+}
+
+.spriteImg
+{
+    background-image: url(https://home-assist.oss-cn-hangzhou.aliyuncs.com/h5Img/apph5/nannyApp/needSprite.png);
+    background-size: 7.92rem;
+}
+
+.backFloor .backIcon
+{
+    float: left;
+
+    width: 1rem;
+    height: 1rem;
+
+    background-position: -.1rem -.92rem;
+}
+
+.backFloor .titleStyle
+{
+    font-size: .52rem;
+    line-height: 1rem;
+
+    float: left;
+
+    width: 47%;
+    margin-left: 17%;
+}
+.backFloor .rightP
+{
+    font-size: .42rem;
+    line-height: 1rem;
+
+    float: right;
+
+    text-align: right;
+}
+.firstTitle
+{
+    font-size: .93rem;
+    font-weight: bold;
+    line-height: 1.03rem;
+
+    text-align: left;
+
+    /*color: #64497c;*/
+}
+
+.secondTitle
+{
+    font-size: .62rem;
+    line-height: .82rem;
+
+    margin: .37rem auto 1.07rem;
+
+    text-align: left;
+
+    /*color: #64497c;*/
+}
+
+.thirdTitle
+{
+    font-size: .52rem;
+    font-weight: bold;
+
+    margin-bottom: .7rem;
+
+    text-align: left;
+
+    /*color: #64497c;*/
+}
+
+.fourtyTitle
+{
+    font-size: .42rem;
+
+    margin-bottom: .5rem;
+
+    text-align: left;
+
+    /*color: #64497c;*/
+}
+
+.normalSize
+{
+    font-size: .36rem;
+
+    /*color: #64497c;*/
+}
+
+
+/**layer.js弹出框样式**/
+
+.layui-m-layerbtn span
+{
+    background-color: white;
+}
+
+/****/
+
+.layerBox
+{
+    position: fixed;
+    z-index: 14;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background-color: rgba(255,255,255,.1);
+}
+.layerShortBoxContent
+{
+    position: fixed;
+    z-index: 15;
+    top: 5.68rem;
+    right: 10%;
+    left: 10%;
+
+    width: 80%;
+    height: 10rem;
+
+    border-radius: .3rem;
+    background-color: white;
+    box-shadow: 0 0 62px 0 rgba(147, 121, 230, .32);
+}
+.layerNormalBoxContent
+{
+    position: fixed;
+    z-index: 15;
+    top: 3.68rem;
+    right: 10%;
+    left: 10%;
+
+    width: 80%;
+    height: 14rem;
+
+    border-radius: .3rem;
+    background-color: white;
+    box-shadow: 0 0 62px 0 rgba(147, 121, 230, .32);
+}
+.layerBox p
+{
+    font-size: .45rem;
+}
+.layerBox .close
+{
+    float: right;
+
+    width: 1.18rem;
+}
+.layerBox .title
+{
+    font-size: .52rem;
+    font-weight: bold;
+
+    float: left;
+
+    width: 100%;
+    margin: 1rem auto .5rem;
+}
+
+.layerBox .normalBtn
+{
+    font-size: .52rem;
+    line-height: 1rem;
+
+    float: left;
+
+    width: 50%;
+    height: 1rem;
+    margin: .6rem 25% auto 25%;
+
+    color: white;
+    border-radius: .7rem;
+    background-color: #bf7bf7;
+    box-shadow: 0 16px 22px 0 rgba(191, 123, 247, .72);
+}
+
+
+/****/
+
+.layerDiv
+{
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, .722);
+}
+
+.layerDivContent
+{
+    position: absolute;
+    z-index: 12;
+    top: 3.15rem;
+    right: 13%;
+    bottom: 4.15rem;
+    left: 13%;
+
+    width: 74%;
+
+    border-radius: .36rem;
+    background-color: white;
+}
+.layerDivContentShort
+{
+    position: absolute;
+    z-index: 12;
+    top: 4.15rem;
+    right: 13%;
+    left: 13%;
+
+    width: 74%;
+    height: 12rem;
+
+    border-radius: .36rem;
+    background-color: white;
+}
+.layerDiv .closeIcon
+{
+    /*margin-right: 13%;*/
+    z-index: 13;
+    /*position: fixed;*/
+
+    display: block;
+    /*right: 13%;*/
+    float: right;
+
+    width: 10%;
+}
+
+.layerDiv .deleteIcon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 13%;
+}
+
+.layerDiv .layerDivTitle
+{
+    font-size: .62rem;
+
+    padding: 1.5rem 0 .66rem;
+}
+
+.layerDiv .line
+{
+    height: 1px;
+    margin-bottom: .75rem;
+
+    background-color: black;
+}
+
+.layerDiv textarea
+{
+    font-size: .42rem;
+
+    width: 87%;
+    height: 3rem;
+    padding: .2rem 1%;
+
+    resize: none;
+
+    border: none;
+    background-color: #f0f0f0;
+}
+.layerDiv button
+{
+    font-size: .52rem;
+    line-height: 1.2rem;
+
+    width: 89%;
+    height: 1.2rem;
+
+    color: white;
+    border: none;
+    background-color: #bf7bf7;
+
+    -webkit-appearance: none;
+}
+.layerDiv .pContent
+{
+    overflow-y: auto;
+
+    min-height: 1rem;
+    max-height: 4rem;
+    margin-top: .5rem;
+}
+
+.layerDiv .pContentItem
+{
+    margin-bottom: .25rem;
+}
+
+.layerDiv .pLeft
+{
+    font-size: .45rem;
+
+    float: left;
+
+    width: 30%;
+
+    text-align: right;
+}
+
+.layerDiv .pRight
+{
+    font-size: .45rem;
+
+    float: left;
+
+    width: 70%;
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+}
+
+
+/****/
+
+.noData
+{
+    font-size: .45rem;
+
+    margin-top: 7rem;
+
+    color: #8e8e8e;
+}
+
+
+/****/
+.marginTopHead
+{
+    margin-top: .4rem;
+}
+.marginTopHeadTwo
+{
+    margin-top: .4rem;
+}
+.marginTopHeadThree
+{
+    /*margin-top: .4rem;*/
+}
+.marginBtnBottom
+{
+    margin-bottom: 3.1rem !important;
+}
+
+.btn
+{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 89%;
+    padding: 0 5.5%;
+
+    background-color: white;
+}
+
+.btn .normalBtn
+{
+    font-size: .6rem;
+    line-height: 1.32rem;
+
+    width: 100%;
+    height: 1.32rem;
+    margin: .34rem auto .95rem;
+
+    color: white;
+    border-radius: .08rem;
+    background-color: #bf7bf7;
+}
+
+.btn .halfLeftBtn
+{
+    font-size: .6rem;
+    line-height: 1.32rem;
+
+    float: left;
+
+    width: 48%;
+    height: 1.32rem;
+    margin: .34rem auto .95rem auto;
+
+    color: white;
+    border-radius: .08rem;
+    background-color: #bf7bf7;
+}
+
+.btn .commentLeftBtn
+{
+    font-size: .6rem;
+    line-height: 1.32rem;
+
+    float: left;
+
+    width: 74%;
+    height: 1.32rem;
+    margin: 1.39rem 1.6% 1.39rem 2%;
+
+    color: white;
+    border-radius: .08rem;
+    background-color: #bf7bf7;
+}
+
+.btn .commentRightBtn
+{
+    font-size: .6rem;
+    line-height: 1.29rem;
+
+    float: left;
+
+    width: 20%;
+    height: 1.29rem;
+    margin: 1.39rem auto;
+
+    color: #bf7bf7;
+    border: 1px solid #bf7bf7;
+    border-radius: .08rem;
+    background-color: white;
+}
+.dashedLine
+{
+    float: left;
+
+    width: 100%;
+    height: 1px;
+    margin: .3rem auto;
+
+    border-top: 1px dashed #d9d9d9;
+}
+.dottedLine
+{
+    float: left;
+
+    width: 100%;
+    height: 1px;
+    margin: .3rem auto;
+
+    border-top: 1px dotted #d9d9d9;
+}
+.solidLine
+{
+    float: left;
+
+    width: 100%;
+    height: 1px;
+    margin: .3rem auto;
+
+    border-top: 1px solid #d9d9d9;
+}
+
+/****/
