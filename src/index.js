@@ -1,8 +1,8 @@
 /*
 * @Author: lixh
 * @Date:   2018-01-15 10:23:47
- * @Last Modified by: lixh
- * @Last Modified time: 2018-04-18 14:10:25
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-04-18 20:16:18
 */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -42,7 +42,7 @@ function renderWithHotReload(RootElement) {
         document.getElementById('app')
     )
 }
-
+// 测试
 ReactDOM.render((
     // GetRouter()
     <Router basename="/dist">
