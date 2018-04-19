@@ -1,13 +1,8 @@
 /*
 * @Author: lixh
 * @Date:   2018-01-15 10:23:47
-<<<<<<< HEAD
  * @Last Modified by: lixh
- * @Last Modified time: 2018-04-19 09:11:09
-=======
- * @Last Modified by: lixh
- * @Last Modified time: 2018-04-19 09:43:52
->>>>>>> 070086486acb2eb4f19e7e9fe9d5482a4aaee529
+ * @Last Modified time: 2018-04-19 10:03:44
 */
 import React from 'react';
 import ReactDOM from 'react-dom';
