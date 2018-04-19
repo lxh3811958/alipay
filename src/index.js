@@ -1,8 +1,8 @@
 /*
 * @Author: lixh
 * @Date:   2018-01-15 10:23:47
- * @Last Modified by: lixh
- * @Last Modified time: 2018-04-19 14:01:06
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-04-19 21:40:02
 */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -14,9 +14,10 @@ import "./Config/Config.css";
 import GetRouter from './router/router';
 import Bundle from './router/Bundle';
 
-import Home from "./pages/Home/Home";
-import HomeService from './pages/ServiceNote/HomeService/HomeService';
-import HDay from './pages/ServiceNote/HDay/HDay';
+import App from "./App";
+// import Home from "./pages/Home/Home";
+// import HomeService from './pages/ServiceNote/HomeService/HomeService';
+// import HDay from './pages/ServiceNote/HDay/HDay';
 import Config from './Config/Config';
 
 document.documentElement.style.fontSize = Config.WindowWidth / 12.42 + 'px';
@@ -46,13 +47,8 @@ function renderWithHotReload(RootElement) {
 // 测试master
 ReactDOM.render((
     // GetRouter()
-    <Router basename="/dist">
-        <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/index" component={Home} />
-            <Route path="/homeService" component={HomeService} />
-            <Route path="/HDay" component={HDay} />
-        </div>
-    </Router>
+    // <Router basename="/dist">
+        <App />
+    // </Router>
 ), document.getElementById('app')
 )

@@ -1,8 +1,8 @@
 /*
  * @Author: lixh
  * @Date:   2018-01-15 10:38:27
- * @Last Modified by: lixh
- * @Last Modified time: 2018-04-08 15:53:06
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-04-19 21:44:30
 */
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
@@ -143,7 +143,7 @@ class SmallIcon extends Component {
                 <div id="youhui">
                     <img src={appIcon1} />
                     <img className="newIcon" src={newIcon} />
-                    <p>优惠</p>
+                    <p>优惠1</p>
                 </div>
                 <div id="beidiao">
                     <img src={appIcon2} />
@@ -235,7 +235,7 @@ class ShowBanner extends Component {
 class ServiceItem extends Component {
     render() {
         return (
-            // <Switch basename="/dist">
+            <Router basename="/dist">
                 <div>
                     <p className="serviceTitle defaultDiv textLeft">服务</p>
                     <p className="serviceContent defaultDiv textLeft">services</p>
@@ -292,7 +292,7 @@ class ServiceItem extends Component {
                         </Link>
                     </div>
                 </div>
-            // </Switch>
+            </Router>
         )
     }
 }
