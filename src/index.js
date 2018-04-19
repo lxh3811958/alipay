@@ -5,8 +5,8 @@
  * @Last Modified by: lixh
  * @Last Modified time: 2018-04-19 09:11:09
 =======
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-04-18 20:16:18
+ * @Last Modified by: lixh
+ * @Last Modified time: 2018-04-19 09:43:52
 >>>>>>> 070086486acb2eb4f19e7e9fe9d5482a4aaee529
 */
 import React from 'react';
@@ -47,7 +47,7 @@ function renderWithHotReload(RootElement) {
         document.getElementById('app')
     )
 }
-// 测试
+
 ReactDOM.render((
     // GetRouter()
     <Router basename="/dist">
