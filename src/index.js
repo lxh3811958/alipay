@@ -2,11 +2,7 @@
 * @Author: lixh
 * @Date:   2018-01-15 10:23:47
  * @Last Modified by: lixh
-<<<<<<< HEAD
- * @Last Modified time: 2018-04-19 11:12:57
-=======
- * @Last Modified time: 2018-04-19 11:11:37
->>>>>>> master
+ * @Last Modified time: 2018-04-19 14:01:06
 */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -46,11 +42,8 @@ function renderWithHotReload(RootElement) {
         document.getElementById('app')
     )
 }
-<<<<<<< HEAD
 // 测试dev-180418-home
-=======
 // 测试master
->>>>>>> master
 ReactDOM.render((
     // GetRouter()
     <Router basename="/dist">
