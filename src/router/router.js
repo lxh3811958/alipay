@@ -2,11 +2,11 @@
  * @Author: lixh
  * @Date:   2018-01-15 10:37:18
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-04-19 21:38:19
+ * @Last Modified time: 2018-04-19 22:14:28
 */
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 import Bundle from './Bundle';
 
@@ -31,6 +31,7 @@ const GetRouter = () => (
                     <Route path="/index" component={createComponent(Home)} />
                     <Route path="/homeService" component={createComponent(HomeService)} />
                     <Route path="/HDay" component={createComponent(HDay)} />
+                    <Redirect from='' to="/" />
                 </div>
             </Router>
         </div>
