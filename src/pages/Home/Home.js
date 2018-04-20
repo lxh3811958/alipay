@@ -2,7 +2,7 @@
  * @Author: lixh
  * @Date:   2018-01-15 10:38:27
  * @Last Modified by: lixh
- * @Last Modified time: 2018-04-20 11:00:33
+ * @Last Modified time: 2018-04-20 22:39:52
 */
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
@@ -15,8 +15,8 @@ import Config from './../../Config/Config';
 import request from "./../../api/request";
 import layer from "./../../Layer/layer";
 import GetRouter from "./../../router/router";
-// import HomeService from './../ServiceNote/HomeService/HomeService';
-// import HDay from './../ServiceNote/HDay/HDay';
+import HomeService from './../ServiceNote/HomeService/HomeService';
+import HDay from './../ServiceNote/HDay/HDay';
 // import HomeService from 'bundle-loader?lazy&name=HomeService./../ServiceNote/HomeService/HomeService';
 // import HDay from 'bundle-loader?lazy&name=HDay./../ServiceNote/HDay/HDay';
 
@@ -239,64 +239,65 @@ class ShowBanner extends Component {
 class ServiceItem extends Component {
     render() {
         return (
-            <Router basename="/dist">
-                <div>
-                    <p className="serviceTitle defaultDiv textLeft">服务</p>
-                    <p className="serviceContent defaultDiv textLeft">services</p>
-                    <div className="defaultDiv clearfix">
-                        <Link to="/homeService">
-                            <div id="homeService" className="serviceItem skipFirst serviceItemRight">
-                                <img src={serviceIconHome} />
-                                <p>家庭保洁</p>
-                            </div>
-                        </Link>
-                        <Link to="/nannyChoice">
-                            <div id="nannyServiceDescription" className="serviceItem skipFirst serviceItemRight">
-                                <img src={serviceIconNanny} />
-                                <p>保姆服务</p>
-                            </div>
-                        </Link>
-                        <Link to="/nannyServiceDescription">
-                            <div id="maternityService" className="serviceItem skipFirst serviceItemRight">
-                                <img className="newIcon" src={hotIcon} />
-                                <img src={serviceIconMaternity} />
-                                <p>母婴服务</p>
-                            </div>
-                        </Link>
-                        <Link to="/maternityService">
-                            <div id="ServiceNoteForHcook" className="serviceItem skipFirst">
-                                <img src={serviceIconCook} />
-                                <p>上门做饭</p>
-                            </div>
-                        </Link>
-                        <Link to="/appliancesClear">
-                            <div id="appliancesClear" className="serviceItem skipFirst serviceItemRight">
-                                <img src={serviceIconWash} />
-                                <p>家电清洗</p>
-                            </div>
-                        </Link>
-                        <Link to="/fixService">
-                            <div id="fixService" className="serviceItem skipFirst serviceItemRight">
-                                <img className="newIcon" src={newIcon} />
-                                <img src={serviceIconRepair} />
-                                <p>家电维修</p>
-                            </div>
-                        </Link>
-                        <Link to="/mobileFix">
-                            <div id="mobileFix" className="serviceItem skipSecond serviceItemRight">
-                                <img src={serviceIconPhone} />
-                                <p>手机维修</p>
-                            </div>
-                        </Link>
-                        <Link to="/officeService">
-                            <div id="officeService" className="serviceItem skipFirst">
-                                <img src={serviceIconOffice} />
-                                <p>企业保洁</p>
-                            </div>
-                        </Link>
-                    </div>
+            <div>
+                <p className="serviceTitle defaultDiv textLeft">服务</p>
+                <p className="serviceContent defaultDiv textLeft">services</p>
+                <div className="defaultDiv clearfix">
+                    <Link to="/homeService">
+                        <div id="homeService" className="serviceItem skipFirst serviceItemRight">
+                            <img src={serviceIconHome} />
+                            <p>家庭保洁</p>
+                        </div>
+                    </Link>
+                    <Link to="/nannyChoice">
+                        <div id="nannyServiceDescription" className="serviceItem skipFirst serviceItemRight">
+                            <img src={serviceIconNanny} />
+                            <p>保姆服务</p>
+                        </div>
+                    </Link>
+                    <Link to="/nannyServiceDescription">
+                        <div id="maternityService" className="serviceItem skipFirst serviceItemRight">
+                            <img className="newIcon" src={hotIcon} />
+                            <img src={serviceIconMaternity} />
+                            <p>母婴服务</p>
+                        </div>
+                    </Link>
+                    <Link to="/maternityService">
+                        <div id="ServiceNoteForHcook" className="serviceItem skipFirst">
+                            <img src={serviceIconCook} />
+                            <p>上门做饭</p>
+                        </div>
+                    </Link>
+                    <Link to="/appliancesClear">
+                        <div id="appliancesClear" className="serviceItem skipFirst serviceItemRight">
+                            <img src={serviceIconWash} />
+                            <p>家电清洗</p>
+                        </div>
+                    </Link>
+                    <Link to="/fixService">
+                        <div id="fixService" className="serviceItem skipFirst serviceItemRight">
+                            <img className="newIcon" src={newIcon} />
+                            <img src={serviceIconRepair} />
+                            <p>家电维修</p>
+                        </div>
+                    </Link>
+                    <Link to="/mobileFix">
+                        <div id="mobileFix" className="serviceItem skipSecond serviceItemRight">
+                            <img src={serviceIconPhone} />
+                            <p>手机维修</p>
+                        </div>
+                    </Link>
+                    <Link to="/officeService">
+                        <div id="officeService" className="serviceItem skipFirst">
+                            <img src={serviceIconOffice} />
+                            <p>企业保洁</p>
+                        </div>
+                    </Link>
+                    <Route path="/index" component={Home} />
+                    <Route path="/homeService" component={HomeService} />
+                    <Route path="/HDay" component={HDay} />
                 </div>
-            </Router>
+            </div>
         )
     }
 }
@@ -308,8 +309,9 @@ class App extends Component {
                 <GuideMap />
                 <SmallIcon />
                 <ShowBanner />
-                <ServiceItem />
-                <GetRouter />
+                <Router basename="/dist">
+                    <ServiceItem />
+                </Router>
             </div>
         )
     }
