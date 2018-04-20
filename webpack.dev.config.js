@@ -1,8 +1,8 @@
 /*
  * @Author: lixh
  * @Date:   2018-01-15 10:19:31
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-04-19 20:42:20
+ * @Last Modified by: lixh
+ * @Last Modified time: 2018-04-20 09:07:23
  * @type 本地环境
  */
 const merge = require('webpack-merge');
@@ -50,7 +50,7 @@ const devConfig = {
         port: 9080,
         contentBase: path.join(__dirname, './dist'),
         historyApiFallback: true,
-        host: '192.168.31.30',
+        host: '192.168.1.20',
     }
 };
 

@@ -1,10 +1,10 @@
 /*
 * @Author: lixh
 * @Date:   2018-01-15 10:23:47
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-04-19 21:40:02
+ * @Last Modified by: lixh
+ * @Last Modified time: 2018-04-20 09:22:15
 */
-import React from 'react';
+import React,{ Component } from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
@@ -43,8 +43,6 @@ function renderWithHotReload(RootElement) {
         document.getElementById('app')
     )
 }
-// 测试dev-180418-home
-// 测试master
 ReactDOM.render((
     // GetRouter()
     // <Router basename="/dist">

@@ -1,20 +1,24 @@
 /*
  * @Author: lixh
  * @Date:   2018-01-15 10:38:27
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-04-19 21:44:30
+ * @Last Modified by: lixh
+ * @Last Modified time: 2018-04-20 11:00:33
 */
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile';
+
+// import Bundle from './../../router/Bundle';
 
 import Config from './../../Config/Config';
 import request from "./../../api/request";
 import layer from "./../../Layer/layer";
 import GetRouter from "./../../router/router";
-import HomeService from './../ServiceNote/HomeService/HomeService';
-import HDay from './../ServiceNote/HDay/HDay';
+// import HomeService from './../ServiceNote/HomeService/HomeService';
+// import HDay from './../ServiceNote/HDay/HDay';
+// import HomeService from 'bundle-loader?lazy&name=HomeService./../ServiceNote/HomeService/HomeService';
+// import HDay from 'bundle-loader?lazy&name=HDay./../ServiceNote/HDay/HDay';
 
 import './Home.css';
 import "./../../Layer/layer.css";
@@ -305,6 +309,7 @@ class App extends Component {
                 <SmallIcon />
                 <ShowBanner />
                 <ServiceItem />
+                <GetRouter />
             </div>
         )
     }
